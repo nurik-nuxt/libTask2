@@ -18,7 +18,7 @@ func ChangeRegistCharacter(character rune) rune {
 func QuadraticRoot(a, b, c float64) (float64, float64, error) {
 	d := b*b - 4*a*c
 	if d < 0 {
-		return -1, -1, errors.New("discriminant is lower than zero")
+		return -1, -1, errors.New("Minus discriminant")
 	}
 	d = math.Sqrt(d)
 	r1 := (-b + d) / (2 * a)
